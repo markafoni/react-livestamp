@@ -53,12 +53,71 @@ const timestamp_end = end_date.getTime() // 1465928741178
 ##### interval (optional)
 The second parameter for **setInterval** is optional with default value of `1000`.
 
-
 <a name="renderStamp"></a>
 ##### renderStamp (optional)
 
+```js
+class App extends React.Component {
+  renderStamp({ days, hours, minutes, seconds }) {
+    return (
+      <div className="react-livestamp">
+        <b>{days} g {hours} s { minutes } dk {seconds} sn</b>
+      </div>
+    )
+  }
+  
+  render() {
+  
+    return (
+    
+      // Default renderStamp template
+      <Livestamp end={end_time} renderStamp={({ days, hours, minutes, seconds }) => (
+        <div className="react-livestamp">
+          <b>{days} g {hours} s { minutes } dk {seconds} sn</b>
+        </div>
+      )}/>
+
+      // or may be in this way:
+      <Livestamp renderStamp={this.renderStamp}>
+    )
+  }
+}
+```
+
 <a name="renderExpired"></a>
 ##### renderExpired (optional)
+
+If the livestamp ends it run this.
+
+```js
+
+class App extends React.Component {
+  renderExpired({ days, hours, minutes, seconds }) {
+    return (
+      <div className="react-livestamp">
+        Date Expired
+      </div>
+    )
+  }
+  
+  render() {
+  
+    return (
+    
+      // Default renderStamp template
+      <Livestamp end={end_time} renderExpired={() => (
+        <div className="react-livestamp">
+          Date Expired
+        </div>
+      )}/>
+
+      // or may be in this way:
+      <Livestamp renderExpired={this.renderExpired}>
+    )
+  }
+}
+```
+
 
 ## Development
 
