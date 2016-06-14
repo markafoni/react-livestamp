@@ -27,6 +27,28 @@ class App extends React.Component {
 }
 ```
 
+## Props
+
+* [`end`](#end)
+* [`interval`](#interval)
+* [`renderStamp`](#renderStamp)
+* [`renderExpired`](#renderExpired)
+
+<a name="end"></a>
+##### end (required)
+Accepts a **Date** object, a **Moment** object, or a **Number** `timestamp`.
+
+<a name="interval"></a>
+##### interval (optional)
+The second parameter for **setInterval** is optional with default value of `1000`.
+
+
+<a name="renderStamp"></a>
+##### renderStamp (optional)
+
+<a name="renderExpired"></a>
+##### renderExpired (optional)
+
 ## Development
 
 ```shell
