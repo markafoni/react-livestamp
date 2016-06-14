@@ -1476,8 +1476,8 @@ var Livestamp = function (_Component) {
     key: "render",
     value: function render() {
       var _props = this.props;
-      var stampRender = _props.stampRender;
-      var expiredRender = _props.expiredRender;
+      var renderStamp = _props.renderStamp;
+      var renderExpired = _props.renderExpired;
 
       // if end date expired then render expiredRender.
 
@@ -1485,7 +1485,7 @@ var Livestamp = function (_Component) {
         return expiredRender();
       }
 
-      return stampRender(this.state);
+      return renderStamp(this.state);
     }
   }]);
 
@@ -1498,13 +1498,13 @@ exports.default = Livestamp;
 Livestamp.propTypes = {
   end: _react2.default.PropTypes.any.isRequired,
   interval: _react.PropTypes.number,
-  stampRender: _react2.default.PropTypes.func,
-  expiredRender: _react2.default.PropTypes.func
+  renderStamp: _react2.default.PropTypes.func,
+  renderExpired: _react2.default.PropTypes.func
 };
 
 Livestamp.defaultProps = {
   interval: 1000, // 1 second
-  stampRender: function stampRender(_ref) {
+  renderStamp: function renderStamp(_ref) {
     var days = _ref.days;
     var hours = _ref.hours;
     var minutes = _ref.minutes;
@@ -1527,7 +1527,7 @@ Livestamp.defaultProps = {
       )
     );
   },
-  expiredRender: function expiredRender() {
+  renderExpired: function renderExpired() {
     return _react2.default.createElement(
       "div",
       { className: "react-livestamp" },
@@ -19838,7 +19838,7 @@ var App = function (_React$Component) {
         ),
         _react2.default.createElement(_reactLivestamp2.default, {
           end: end_date,
-          stampRender: function stampRender(_ref) {
+          renderStamp: function renderStamp(_ref) {
             var days = _ref.days;
             var hours = _ref.hours;
             var minutes = _ref.minutes;

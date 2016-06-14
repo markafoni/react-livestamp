@@ -16,7 +16,7 @@ class App extends React.Component {
 
         <Livestamp
           end={end_date}
-          stampRender={({ days, hours, minutes, seconds }) => (
+          renderStamp={({ days, hours, minutes, seconds }) => (
             <div className="livestamp">
               <div>
                 <span className="days">{days}</span>
