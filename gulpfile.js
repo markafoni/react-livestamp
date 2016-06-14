@@ -5,4 +5,10 @@ gulp.task('build', function () {
   return gulp.src('./livestamp.jsx').pipe(babel()).pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['build']);
+gulp.task('watch', ['build'], function () {
+
+  // watch jsx.
+  gulp.watch('./livestamp.jsx', ['build']);
+});
+
+gulp.task('default', ['watch']);
