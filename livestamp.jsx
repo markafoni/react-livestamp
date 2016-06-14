@@ -71,7 +71,7 @@ export default class Livestamp extends Component {
       return expiredRender();
     }
 
-    return stampRender(this.state);
+    return renderStamp(this.state);
   }
 }
 
