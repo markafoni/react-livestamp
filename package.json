@@ -1,6 +1,6 @@
 {
   "name": "react-livestamp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Yasar icli",
   "description": "Auto updating timeago text to your timestamped for React",
   "license": "MIT",
@@ -13,6 +13,10 @@
     "url": "https://github.com/markafoni/react-livestamp/issues"
   },
   "main": "dist/livestamp.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "npm run build"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.9.1",

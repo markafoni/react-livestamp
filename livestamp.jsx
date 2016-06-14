@@ -64,7 +64,7 @@ export default class Livestamp extends Component {
   }
 
   render() {
-    const { stampRender, expiredRender } = this.props;
+    const { renderStamp, renderExpired } = this.props;
 
     // if end date expired then render expiredRender.
     if (this.state.expired) {
@@ -78,20 +78,20 @@ export default class Livestamp extends Component {
 Livestamp.propTypes = {
   end: React.PropTypes.any.isRequired,
   interval: PropTypes.number,
-  stampRender: React.PropTypes.func,
-  expiredRender: React.PropTypes.func
+  renderStamp: React.PropTypes.func,
+  renderExpired: React.PropTypes.func
 };
 
 Livestamp.defaultProps = {
   interval: 1000, // 1 second
-  stampRender({ days, hours, minutes, seconds }) {
+  renderStamp({ days, hours, minutes, seconds }) {
     return (
       <div className="react-livestamp">
         <b>{days} g {hours} s { minutes } dk {seconds} sn</b>
       </div>
     )
   },
-  expiredRender() {
+  renderExpired() {
     return (
       <div className="react-livestamp">
         Expired Datetime.
