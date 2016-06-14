@@ -1,6 +1,6 @@
 {
   "name": "react-livestamp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Yasar icli",
   "description": "Auto updating timeago text to your timestamped for React",
   "license": "MIT",
