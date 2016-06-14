@@ -1,0 +1,21 @@
+{
+  "name": "react-livestamp-page",
+  "version": "0.0.3",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-livestamp": "0.0.3"
+  },
+  "devDependencies": {
+    "browserify": "3.44.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "2.0.1",
+    "gulp-minify-css": "0.3.11",
+    "gulp-uglify": "1.0.2",
+    "vinyl-source-stream": "^1.0.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0"
+  }
+}
