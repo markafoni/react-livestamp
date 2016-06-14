@@ -36,7 +36,18 @@ class App extends React.Component {
 
 <a name="end"></a>
 ##### end (required)
-Accepts a **Date** object, a **Moment** object, or a **Number** `timestamp`.
+Accepts a **Date** object, a **String** format, or a **Number** `timestamp`.
+
+```js
+
+const end_time = new Date(); // Object instanceof date
+const str_end = end_date.toString() // Tue Jun 14 2016 21:25:41 GMT+0300 (EEST)
+const timestamp_end = end_date.getTime() // 1465928741178
+
+<Livestamp end={end_time} />
+<Livestamp end={str_end} />
+<Livestamp end={timestamp_end} />
+```
 
 <a name="interval"></a>
 ##### interval (optional)
