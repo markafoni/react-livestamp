@@ -1,0 +1,20 @@
+{
+  "name": "react-livestamp",
+  "version": "0.0.4",
+  "homepage": "https://markafoni.github.io/react-livestamp/",
+  "authors": [
+    "Yasar icli <yasar.icli@markafoni.com>"
+  ],
+  "description": "Auto updating timeago text to your timestamped for React",
+  "main": "dist/react-livestamp.js",
+  "keywords": [
+    "livestamp",
+    "countdown"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "livestamp.jsx",
+    "package.json",
+    "gulpfile.json"
+  ]
+}
