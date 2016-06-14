@@ -103,7 +103,7 @@ var Livestamp = function (_Component) {
         return expiredRender();
       }
 
-      return stampRender(this.state);
+      return renderStamp(this.state);
     }
   }]);
 
