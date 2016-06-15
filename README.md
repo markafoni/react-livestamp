@@ -1,4 +1,4 @@
-# React Livestamp
+# React Livestamp [![npm package][npm-badge]][npm]
 Auto updating timeago text to your timestamped for React
 
 ## Installation
@@ -125,3 +125,6 @@ class App extends React.Component {
 npm install
 npm start # watch and build.
 ```
+
+[npm-badge]: https://img.shields.io/npm/v/react-livestamp.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-livestamp
