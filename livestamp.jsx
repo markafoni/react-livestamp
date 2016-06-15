@@ -68,7 +68,7 @@ export default class Livestamp extends Component {
 
     // if end date expired then render expiredRender.
     if (this.state.expired) {
-      return expiredRender();
+      return renderExpired();
     }
 
     return renderStamp(this.state);
