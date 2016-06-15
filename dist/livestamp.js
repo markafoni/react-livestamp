@@ -100,7 +100,7 @@ var Livestamp = function (_Component) {
       // if end date expired then render expiredRender.
 
       if (this.state.expired) {
-        return expiredRender();
+        return renderExpired();
       }
 
       return renderStamp(this.state);
