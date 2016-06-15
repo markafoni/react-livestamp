@@ -1,10 +1,15 @@
 # React Livestamp [![npm package][npm-badge]][npm]
 A simple and html date countdown component for React
 
-## Installation
+### Installation
 
 ```shell
 npm install react-livestamp --save
+```
+
+### Install via Bower
+```shell
+bower install react-livestamp
 ```
 
 ## Basic Usage (start counting!)
