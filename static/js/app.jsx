@@ -36,6 +36,9 @@ class App extends React.Component {
               </div>
             </div>
           )}
+          renderExpired={() => (
+            <h2>Expired Date</h2>
+          )}
         />
       </div>
     )

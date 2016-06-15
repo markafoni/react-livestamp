@@ -1482,7 +1482,7 @@ var Livestamp = function (_Component) {
       // if end date expired then render expiredRender.
 
       if (this.state.expired) {
-        return expiredRender();
+        return renderExpired();
       }
 
       return renderStamp(this.state);
@@ -19902,6 +19902,13 @@ var App = function (_React$Component) {
                   'Seconds'
                 )
               )
+            );
+          },
+          renderExpired: function renderExpired() {
+            return _react2.default.createElement(
+              'h2',
+              null,
+              'Expired Date'
             );
           }
         })

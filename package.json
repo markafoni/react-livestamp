@@ -4,7 +4,7 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-livestamp": "0.0.5"
+    "react-livestamp": "0.0.6"
   },
   "devDependencies": {
     "browserify": "3.44.2",
