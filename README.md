@@ -1,5 +1,5 @@
 # React Livestamp [![npm package][npm-badge]][npm]
-Auto updating timeago text to your timestamped for React
+A simple and html date countdown component for React
 
 ## Installation
 
@@ -7,7 +7,7 @@ Auto updating timeago text to your timestamped for React
 npm install react-livestamp --save
 ```
 
-## Basic Usage
+## Basic Usage (start counting!)
 ```js
 import React from 'react';
 import Livestamp from 'react-livestamp';
