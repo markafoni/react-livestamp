@@ -83,7 +83,7 @@ class App extends React.Component {
       )}/>
 
       // or may be in this way:
-      <Livestamp renderStamp={this.renderStamp}>
+      <Livestamp renderStamp={this.renderStamp} />
     )
   }
 }
@@ -117,7 +117,7 @@ class App extends React.Component {
       )}/>
 
       // or may be in this way:
-      <Livestamp renderExpired={this.renderExpired}>
+      <Livestamp renderExpired={this.renderExpired} />
     )
   }
 }
